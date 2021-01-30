@@ -80,12 +80,12 @@ public class Airport {
                 case 3:
                     int z = 0;
                     do {
-                        System.out.println("###############     manage flight employees     #############");
+                        System.out.println("###############     manage passengers     #############");
                         System.out.println("enter one of numbers for action :");
-                        System.out.println("1 add flight employee");
-                        System.out.println("2 edit flight employee");
-                        System.out.println("3 delete flight employee");
-                        System.out.println("4 display information of flight employees ");
+                        System.out.println("1 add passenger");
+                        System.out.println("2 edit passenger");
+                        System.out.println("3 delete passenger");
+                        System.out.println("4 display information of passenger ");
                         z = input.nextInt();
                         switch (z) {
                             case 1:
@@ -103,12 +103,12 @@ public class Airport {
                 case 4:
                     int n = 0;
                     do {
-                        System.out.println("###############     manage flight employees     #############");
+                        System.out.println("###############     manage tickets     #############");
                         System.out.println("enter one of numbers for action :");
-                        System.out.println("1 add flight employee");
-                        System.out.println("2 edit flight employee");
-                        System.out.println("3 delete flight employee");
-                        System.out.println("4 display information of flight employees ");
+                        System.out.println("1 create ticket");
+                        System.out.println("2 edit ticket");
+                        System.out.println("3 delete ticket");
+                        System.out.println("4 display information of ticket ");
                         n = input.nextInt();
                         switch (n) {
                             case 1:
@@ -124,8 +124,27 @@ public class Airport {
                     } while (n != 0);
                     break;
                 case 5:
-                    break;
-                case 6:
+                    int m = 0;
+                    do {
+                        System.out.println("###############     manage flights     #############");
+                        System.out.println("enter one of numbers for action :");
+                        System.out.println("1 create flight");
+                        System.out.println("2 edit flight");
+                        System.out.println("3 delete flight");
+                        System.out.println("4 display information of flight ");
+                        m = input.nextInt();
+                        switch (m) {
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+
+                        }
+                    } while (m != 0);
                     break;
 
             }
