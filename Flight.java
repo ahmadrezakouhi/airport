@@ -20,13 +20,13 @@ public class Flight {
     private String origin;
     private String destination;
     private Date date;
-    private TimeZone time;
+    private Time time;
     private Pilot pilot;
     private ArrayList<FlightAttendant> flightattendants;
     private ArrayList<Passenger> passengers;
     private ArrayList<Ticket> tickets;
 
-    public Flight(int serial, Plane plane, String origin, String destination, Date date, TimeZone time, Pilot pilot) {
+    public Flight(int serial, Plane plane, String origin, String destination, Date date, Time time, Pilot pilot) {
         this.serial = serial;
         this.plane = plane;
         this.origin = origin;
@@ -58,7 +58,7 @@ public class Flight {
         return date;
     }
 
-    public TimeZone getTime() {
+    public Time getTime() {
         return time;
     }
 
@@ -72,6 +72,10 @@ public class Flight {
 
     public ArrayList<Passenger> getPassengers() {
         return passengers;
+    }
+
+    public ArrayList<Ticket> getTickets() {
+        return tickets;
     }
 
     public void setSerial(int serial) {
@@ -94,7 +98,7 @@ public class Flight {
         this.date = date;
     }
 
-    public void setTime(TimeZone time) {
+    public void setTime(Time time) {
         this.time = time;
     }
 
@@ -102,21 +106,16 @@ public class Flight {
         this.pilot = pilot;
     }
 
-    public void addFlightAttendant(FlightAttendant flightAttendant) {
-        this.flightattendants.add(flightAttendant);
+    public void setFlightattendants(ArrayList<FlightAttendant> flightattendants) {
+        this.flightattendants = flightattendants;
     }
 
-    public void removeFlightAttendant(FlightAttendant flightAttendant) {
-
-        this.flightattendants.remove(flightAttendant);
+    public void setPassengers(ArrayList<Passenger> passengers) {
+        this.passengers = passengers;
     }
 
-    public void addPassenger(Passenger passenger) {
-        this.passengers.add(passenger);
-    }
-
-    public void removePassenger(Passenger passenger) {
-        this.passengers.remove(passenger);
+    public void setTickets(ArrayList<Ticket> tickets) {
+        this.tickets = tickets;
     }
 
 }
