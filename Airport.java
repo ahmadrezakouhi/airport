@@ -23,16 +23,109 @@ public class Airport {
         int i;
         do {
             System.out.println("enter one of numbers for action : ");
-            System.out.println("1 create flight employee");
-            System.out.println("2 display flight employee");
+            System.out.println("1 manage flight employees");
+            System.out.println("2 manage planes");
+            System.out.println("3 manage passengers");
+            System.out.println("4 manage tickets");
+            System.out.println("5 manage flights");
             System.out.println("0 exit");
             i = input.nextInt();
             switch (i) {
                 case 1:
-                    management.createFlightEmployee();
+                    int x = 0;
+                    do {
+                        System.out.println("###############     manage flight employees     #############");
+                        System.out.println("enter one of numbers for action :");
+                        System.out.println("1 add flight employee");
+                        System.out.println("2 edit flight employee");
+                        System.out.println("3 delete flight employee");
+                        System.out.println("4 display information of flight employees ");
+                        x = input.nextInt();
+                        switch (x) {
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+
+                        }
+                    } while (x != 0);
                     break;
                 case 2:
-                    management.displayFlightEmployees();
+                    int y = 0;
+                    do {
+                        System.out.println("###############     manage Planes     #############");
+                        System.out.println("enter one of numbers for action :");
+                        System.out.println("1 add flight employee");
+                        System.out.println("2 edit flight employee");
+                        System.out.println("3 delete flight employee");
+                        System.out.println("4 display information of flight employees ");
+                        y = input.nextInt();
+                        switch (y) {
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+
+                        }
+                    } while (y != 0);
+                    break;
+                case 3:
+                    int z = 0;
+                    do {
+                        System.out.println("###############     manage flight employees     #############");
+                        System.out.println("enter one of numbers for action :");
+                        System.out.println("1 add flight employee");
+                        System.out.println("2 edit flight employee");
+                        System.out.println("3 delete flight employee");
+                        System.out.println("4 display information of flight employees ");
+                        z = input.nextInt();
+                        switch (z) {
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+
+                        }
+                    } while (z != 0);
+                    break;
+                case 4:
+                    int n = 0;
+                    do {
+                        System.out.println("###############     manage flight employees     #############");
+                        System.out.println("enter one of numbers for action :");
+                        System.out.println("1 add flight employee");
+                        System.out.println("2 edit flight employee");
+                        System.out.println("3 delete flight employee");
+                        System.out.println("4 display information of flight employees ");
+                        n = input.nextInt();
+                        switch (n) {
+                            case 1:
+                                break;
+                            case 2:
+                                break;
+                            case 3:
+                                break;
+                            case 4:
+                                break;
+
+                        }
+                    } while (n != 0);
+                    break;
+                case 5:
+                    break;
+                case 6:
                     break;
 
             }
